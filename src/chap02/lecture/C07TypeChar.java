@@ -9,7 +9,7 @@ public class C07TypeChar {
 		char var4 = 'a';
 		char var5 = '가';
 		char var6 = '나';
-		char var7 = '\uac00';
+		char var7 = '\uac00'; // \uac00
 		
 		System.out.println(var7);
 		
