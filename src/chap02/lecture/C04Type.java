@@ -63,7 +63,13 @@ public class C04Type {
 		
 		// 큰 정수 사용시 _ 조합 가능
 		int var15 = 21_3876_1234;
+		int var18 = 2138761234;
 		int var16 = 2_138_761_234;
+		long var17 = 922_3372_0368_5477_5807L;
+		System.out.println(var15);
+		System.out.println(var18);
+		System.out.println(var17);
+		System.out.println(var13);
 	}
 }
 
