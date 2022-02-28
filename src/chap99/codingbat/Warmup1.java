@@ -1,6 +1,13 @@
 package chap99.codingbat;
 
 public class Warmup1 {
+	public boolean makes10(int a, int b) {
+
+		int sum = a + b;
+
+		return (sum == 10) || (a == 10) || (b == 10);
+	}
+
 	public boolean parrotTrouble(boolean talking, int hour) {
 		return talking && (hour < 7 || hour > 20);
 	}
