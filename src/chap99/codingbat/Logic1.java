@@ -1,6 +1,14 @@
 package chap99.codingbat;
 
 public class Logic1 {
+	public boolean squirrelPlay(int temp, boolean isSummer) {
+		if (isSummer) {
+			return temp >= 60 && temp <= 100;
+		} else {
+			return temp >= 60 && temp <= 90;
+		}
+	}
+
 	public int dateFashion(int you, int date) {
 		int result = 1;
 
