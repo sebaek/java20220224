@@ -1,6 +1,17 @@
 package chap99.codingbat;
 
 public class Logic1 {
+	public int sortaSum(int a, int b) {
+		int sum = a + b;
+
+		if (sum >= 10 && sum <= 19) {
+			return 20;
+		} else {
+			return sum;
+		}
+
+	}
+
 	public int caughtSpeeding(int speed, boolean isBirthday) {
 		int limit1 = 61;
 		int limit2 = 81;
