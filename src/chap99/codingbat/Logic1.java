@@ -1,6 +1,24 @@
 package chap99.codingbat;
 
 public class Logic1 {
+	public int caughtSpeeding(int speed, boolean isBirthday) {
+		int limit1 = 61;
+		int limit2 = 81;
+
+		if (isBirthday) {
+			limit1 += 5;
+			limit2 += 5;
+		}
+
+		if (speed >= limit2) {
+			return 2;
+		} else if (speed >= limit1) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
 	public boolean squirrelPlay(int temp, boolean isSummer) {
 		if (isSummer) {
 			return temp >= 60 && temp <= 100;
