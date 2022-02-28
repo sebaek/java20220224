@@ -22,7 +22,7 @@ public class C04Random {
 		
 		// 로또 (1~45)번호
 		System.out.println("로또");
-		System.out.println(); // 코드작성
+		System.out.println(((int) (Math.random()*45)) + 1); // 코드작성
 	}
 }
 
