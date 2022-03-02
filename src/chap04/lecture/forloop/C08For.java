@@ -21,6 +21,16 @@ public class C08For {
 		
 		// arr1의 값 중 가장 큰값을 출력
 		
+		int max = arr1[0];
+		for (int i = 1; i < arr1.length; i++) {
+//			max = (max < arr1[i]) ? arr1[i] : max;
+			
+			if (max < arr1[i]) {
+				max = arr1[i];
+			}
+		}
+		System.out.println(max);
+		
 		//                 작은값을 출력
 		
 	}
