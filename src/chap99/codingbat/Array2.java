@@ -1,6 +1,25 @@
 package chap99.codingbat;
 
 public class Array2 {
+	public int sum13(int[] nums) {
+		int sum = 0;
+		boolean is13 = false;
+		boolean was13 = false;
+
+		for (int i = 0; i < nums.length; i++) {
+
+			is13 = nums[i] == 13;
+
+			if (!was13 && !is13) {
+				sum += nums[i];
+			}
+
+			was13 = is13;
+		}
+
+		return sum;
+	}
+
 	public int centeredAverage(int[] nums) {
 		int sum = 0;
 		int max = nums[0];
