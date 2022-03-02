@@ -20,7 +20,9 @@ public class C07For {
 		
 		System.out.println("각 값을 두배로");
 		// 여러분들의 코드작성
-		
+		for (int i = 0; i < arr1.length; i++) {
+			arr1[i] *= 2;
+		}
 		
 		// 출력
 		for (int i = 0; i < arr1.length; i++) {
