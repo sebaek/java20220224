@@ -32,7 +32,13 @@ public class C08For {
 		System.out.println(max);
 		
 		//                 작은값을 출력
-		
+		int min = arr1[0];
+		for (int i = 1; i < arr1.length; i++) {
+			if (min > arr1[i]) {
+				min = arr1[i];
+			}
+		}
+		System.out.println(min);
 	}
 }
 
