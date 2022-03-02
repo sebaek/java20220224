@@ -9,7 +9,7 @@ public class C04For {
 		
 		System.out.println("1~5까지 출력");
 	
-		System.out.println("0~10까지 짝수만 출력");
+		System.out.println("0~10까지 짝수만 출력"); // hint : i가 2씩 늘어나도록
 		
 		System.out.println("1~9까지 홀수만 출력");
 		
