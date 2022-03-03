@@ -1,6 +1,27 @@
 package chap99.codingbat;
 
 public class Array2 {
+	public int sum67(int[] nums) {
+
+		int sum = 0;
+
+		int i = 0;
+		while (i < nums.length) {
+
+			if (nums[i] == 6) {
+				while (nums[i] != 7) {
+					i++;
+				}
+			} else {
+				sum += nums[i];
+			}
+
+			i++;
+		}
+
+		return sum;
+	}
+
 	public int sum13(int[] nums) {
 		int sum = 0;
 		boolean is13 = false;
