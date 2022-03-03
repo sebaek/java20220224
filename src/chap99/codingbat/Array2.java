@@ -1,6 +1,24 @@
 package chap99.codingbat;
 
 public class Array2 {
+	public boolean has22(int[] nums) {
+
+		int i = 0;
+
+		while (i < nums.length - 1) {
+			if (nums[i] == 2) {
+				int next = nums[i + 1];
+				if (next == 2) {
+					return true;
+				}
+			}
+
+			i++;
+		}
+
+		return false;
+	}
+
 	public int sum67(int[] nums) {
 
 		int sum = 0;
