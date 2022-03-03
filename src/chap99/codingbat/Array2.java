@@ -1,6 +1,24 @@
 package chap99.codingbat;
 
 public class Array2 {
+	public boolean lucky13(int[] nums) {
+
+		boolean has1 = false;
+		boolean has3 = false;
+
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] == 1) {
+				has1 = true;
+			}
+
+			if (nums[i] == 3) {
+				has3 = true;
+			}
+		}
+
+		return !has1 && !has3;
+	}
+
 	public boolean has22(int[] nums) {
 
 		int i = 0;
