@@ -1,6 +1,22 @@
 package chap99.codingbat;
 
 public class Warmup1 {
+	public String notString(String str) {
+
+		String front = "";
+
+		if (str.length() >= 3) {
+			front = str.substring(0, 3);
+		}
+
+		if (front.equals("not")) {
+			return str;
+		} else {
+			return "not " + str;
+		}
+
+	}
+
 	public boolean posNeg(int a, int b, boolean negative) {
 
 		if (negative) {
