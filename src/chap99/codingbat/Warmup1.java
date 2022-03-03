@@ -1,6 +1,11 @@
 package chap99.codingbat;
 
 public class Warmup1 {
+	public boolean nearHundred(int n) {
+		// return (n >= 90 && n <= 110) || (n >= 190 && n <= 210);
+		return Math.abs(100 - n) <= 10 || Math.abs(200 - n) <= 10;
+	}
+
 	public boolean makes10(int a, int b) {
 
 		int sum = a + b;
