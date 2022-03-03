@@ -10,7 +10,7 @@ public class Exercise04 {
 			
 			System.out.println("(" + num1 + ", " + num2 + ")");
 			
-			if ((num1 + num2) == 5) {
+			while ((num1 + num2) == 5) {
 				more = false;
 			}
 		}
