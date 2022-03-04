@@ -1,6 +1,20 @@
 package chap99.codingbat;
 
 public class Array1 {
+	public int[] makePi() {
+		// int[] arr1 = {3, 1, 4};
+		// return arr1;
+
+		// int[] arr1 = new int[] {3, 1, 4};
+		// return arr1;
+
+		// int[] arr1;
+		// arr1 = new int[] {3, 1, 4};
+		// return arr1;
+
+		return new int[] { 3, 1, 4 };
+	}
+
 	public int sum3(int[] nums) {
 		return nums[0] + nums[1] + nums[2];
 	}
