@@ -1,6 +1,16 @@
 package chap99.codingbat;
 
 public class Array2 {
+	public int[] fizzArray(int n) {
+		int[] result = new int[n];
+
+		for (int i = 0; i < n; i++) {
+			result[i] = i;
+		}
+
+		return result;
+	}
+
 	public boolean lucky13(int[] nums) {
 
 		boolean has1 = false;
