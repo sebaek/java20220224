@@ -1,6 +1,16 @@
 package chap99.codingbat;
 
 public class Array2 {
+	public int[] fizzArray3(int start, int end) {
+		int[] arr = new int[end - start];
+
+		for (int i = start; i < end; i++) {
+			arr[i - start] = i;
+		}
+
+		return arr;
+	}
+
 	public int[] fizzArray(int n) {
 		int[] result = new int[n];
 
