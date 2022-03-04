@@ -23,6 +23,9 @@ public class C04ReferenceType {
 		for (int i = 0; i < arr1.length; i++) {
 			System.out.println(arr2[i]);
 		}
+		
+		arr2[0] = 99;
+		System.out.println(arr1[0]);
 	}
 }
 
