@@ -22,4 +22,18 @@ public class C09Array {
 		method1(e);
 		System.out.println(e[0][0]); // 100
 	}
+
+	public static void method1(int[][] param) {
+		//		for (int i = 0; i < param.length; i++) {
+		//			for (int j = 0; j < param[i].length; j++) {
+		//				param[i][j] = param[i][j] * param[i][j]; 
+		//			}
+		//		}
+
+		param[param.length - 1][param[param.length - 1].length - 1] 
+				*= param[param.length - 1][param[param.length - 1].length - 1];
+	}
 }
+
+
+
