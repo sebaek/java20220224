@@ -8,5 +8,9 @@ public class C07Array {
 		arr1[0][1] = 50;
 		
 		System.out.println(arr2[0][1]);
+		
+		arr2[1] = new int[] {300, 200, 100};
+		System.out.println(arr2[1][0]); // 300
+		System.out.println(arr1[1][0]); // 300
 	}
 }
