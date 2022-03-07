@@ -10,7 +10,7 @@ public class C13ArrayCopy {
 		b[0][0] = 99;
 		System.out.println(a[0][0]);
 		
-		int[][] c = Arrays.copyOf(a, 3);
+		int[][] c = Arrays.copyOf(a, a.length);
 		System.out.println(c[0][0]);
 		
 		c[0][0] = 999;
