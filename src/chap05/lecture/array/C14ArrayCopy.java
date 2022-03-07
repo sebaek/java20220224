@@ -19,3 +19,8 @@ public class C14ArrayCopy {
 		System.out.println(a[0][0]);// 99;
 	}
 }
+
+
+
+
+
