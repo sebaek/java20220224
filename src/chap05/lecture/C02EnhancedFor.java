@@ -12,6 +12,9 @@ public class C02EnhancedFor {
 			sum += arr[i];
 		}
 		*/
+		for (int e : arr) {
+			sum += e;
+		}
 		
 		System.out.println(sum);
 		
