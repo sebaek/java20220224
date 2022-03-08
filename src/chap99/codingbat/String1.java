@@ -1,6 +1,16 @@
 package chap99.codingbat;
 
 public class String1 {
+	public boolean frontAgain(String str) {
+		if (str.length() < 2) {
+			return false;
+		}
+
+		String end = str.substring(str.length() - 2);
+		int i = str.indexOf(end);
+		return i == 0;
+	}
+
 	public boolean hasBad(String str) {
 		int i = str.indexOf("bad");
 
