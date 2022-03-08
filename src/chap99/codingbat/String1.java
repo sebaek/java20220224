@@ -1,6 +1,12 @@
 package chap99.codingbat;
 
 public class String1 {
+	public boolean hasBad(String str) {
+		int i = str.indexOf("bad");
+
+		return (i == 0) || (i == 1);
+	}
+
 	public String middleThree(String str) {
 		int middle = str.length() / 2;
 
