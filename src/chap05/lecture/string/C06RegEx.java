@@ -1,7 +1,6 @@
 package chap05.lecture.string;
 
 public class C06RegEx {
-	// git.io/vx86v
 	
 	public static void main(String[] args) {
 		// regular expression
