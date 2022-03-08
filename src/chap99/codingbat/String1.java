@@ -1,6 +1,13 @@
 package chap99.codingbat;
 
 public class String1 {
+	public String middleThree(String str) {
+		int middle = str.length() / 2;
+
+		return str.substring(middle - 1, middle + 2);
+
+	}
+
 	public String nTwice(String str, int n) {
 		String front = str.substring(0, n);
 		String end = str.substring(str.length() - n);
