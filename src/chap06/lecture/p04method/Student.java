@@ -12,6 +12,7 @@ public class Student {
 	// 리턴타입 메소드명(파라미터타입 파라미터명...) { 명령문...}
 	void study() {
 		// 실행할 명령문들...
+		System.out.println(name + "이(가)");
 		System.out.println("공부합니다.");
 	}
 }
