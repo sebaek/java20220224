@@ -1,5 +1,5 @@
 package chap06.book.s061301.package1;
 
-public class A {
+class A { // package private
 
 }
