@@ -4,6 +4,7 @@ public class Child extends Parent {
 	private String name;
 	
 	public Child() {
+//		super();
 		this("홍길동");
 		System.out.println("Child() call");
 	}
