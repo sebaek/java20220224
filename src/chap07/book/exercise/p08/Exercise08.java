@@ -13,7 +13,7 @@ public class Exercise08 {
 //		method((B) new A()); // xxx
 		
 		A a1 = new D();
-		method((B) a1); // 
+		method((B) a1); // ??
 		
 		System.out.println("명령문 계속 진행....");
 	}
