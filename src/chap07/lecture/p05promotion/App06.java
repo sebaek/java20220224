@@ -1,5 +1,11 @@
 package chap07.lecture.p05promotion;
 
+import chap07.lecture.p99polymorphism_class.Animal;
+import chap07.lecture.p99polymorphism_class.Canine;
+import chap07.lecture.p99polymorphism_class.Chihuahua;
+import chap07.lecture.p99polymorphism_class.Feline;
+import chap07.lecture.p99polymorphism_class.StreetCat;
+
 public class App06 {
 	public static void main(String[] args) {
 		Chihuahua chihuahua = new Chihuahua();
