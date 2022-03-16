@@ -3,6 +3,8 @@ package chap07.lecture.p06polymorphism;
 import chap07.lecture.p99polymorphism_class.Animal;
 import chap07.lecture.p99polymorphism_class.Canine;
 import chap07.lecture.p99polymorphism_class.Chihuahua;
+import chap07.lecture.p99polymorphism_class.Feline;
+import chap07.lecture.p99polymorphism_class.StreetCat;
 
 public class App10 {
 	public static void main(String[] args) {
@@ -21,6 +23,29 @@ public class App10 {
 		boolean b3 = animal instanceof Chihuahua; // true
 		System.out.println(b3);
 		
+		boolean b4 = animal instanceof Feline; // false
+		System.out.println(b4);
+		
+		boolean b5 = animal instanceof StreetCat; // false
+		System.out.println(b5);
+		
+		
+		if (animal instanceof Canine) {
+			Canine canine = (Canine) animal;
+		}
+		
+		if (animal instanceof Chihuahua) {
+			Chihuahua chihuahua = (Chihuahua) animal;
+			chihuahua.angry();
+		}
+		
+		if (animal instanceof Feline) {
+			Feline feline = (Feline) animal;
+		}
+		
+		if (animal instanceof StreetCat) {
+			StreetCat streetCat = (StreetCat) animal;
+		}
 		
 	}
 }
