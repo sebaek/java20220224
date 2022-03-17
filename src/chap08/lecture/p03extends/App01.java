@@ -13,5 +13,20 @@ public class App01 {
 		sub1.superMethod1();
 		o1.superMethod1();
 		super1.superMethod1();
+		
+		MySuperInterface2 super2 = o1;
+		// superMethod2() 호출
+		// o1, sub1, super1, super2
+		
+		o1.superMethod2();
+		sub1.superMethod2();
+		super2.superMethod2();
+//		super1.superMethod2(); // xxxxx
 	}
 }
+
+
+
+
+
+
