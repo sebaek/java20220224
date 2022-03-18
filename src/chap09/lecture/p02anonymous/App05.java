@@ -9,12 +9,12 @@ public class App05 {
 			}
 			
 			@Override
-			public void method2() {
+			protected void method2() {
 				System.out.println("프로텍티드 메소드 재정의");
 			}
 			
 			@Override
-			public void method3() {
+			void method3() {
 				System.out.println("패키지프라이빗 메소드 재저의");
 			}
 		};
