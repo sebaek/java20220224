@@ -2,6 +2,7 @@ package chap09.lecture.p02anonymous;
 
 public class App02 {
 	public static void main(String[] args) {
+		// 지역 클래스 (local class)
 		class MyLocalClass1 implements MyInterface1 {
 			@Override
 			public void method1() {
