@@ -15,7 +15,7 @@ public class App09 {
 			}
 		};
 		
-		o1.method2(); // xxx
+		o1.method2(); // xxx -> 인터페이스에서 디폴트 메소드 만들어서 해결함.
 		o1.method1();
 	}
 }
