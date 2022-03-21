@@ -8,8 +8,8 @@ public class App07 {
 			int r = arr1[0] / arr1[1];
 
 			System.out.println(r);
-		} catch (RuntimeException e) {
-			System.out.println("런타임익셉션 발생");
+		} catch (ArithmeticException | NullPointerException e) {
+			System.out.println("아리스메틱익셉션 또는 널포인터익셉션 발생");
 		}
 		// catch 블럭 여러개 작성시
 		// 하위타입보다 상위타입을 아래에 작성
