@@ -17,6 +17,7 @@ public class App02 {
 
 class MyClass2 {
 	
+	
 	void method1() {
 		
 	}
