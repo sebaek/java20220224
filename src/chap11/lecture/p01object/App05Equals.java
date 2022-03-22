@@ -18,6 +18,17 @@ class Car {
 		this.model = model;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+
+		if (obj instanceof Car) {
+			Car o = (Car) obj;
+			
+			return this.company.equals(o.company) && this.model.equals(o.model);
+		}
+		
+		return false;
+	}
 	
 }
 
