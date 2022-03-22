@@ -7,6 +7,8 @@ public class App01 {
 		Class c1 = MyClass.class;
 		
 		Method method = c1.getDeclaredMethod("method2");
+		System.out.println(method.getName());
+		System.out.println(method.getAnnotations().length);
 		System.out.println(method.isAnnotationPresent(MyAnnotation1.class));
 		
 	}
