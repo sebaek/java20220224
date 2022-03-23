@@ -7,7 +7,7 @@ public class App02 {
 	public static void main(String[] args) {
 		Math.abs(-10);
 		
-		// static import
+		// import static
 		abs(-20);
 		min(3, 5);
 		max(1, 2);
