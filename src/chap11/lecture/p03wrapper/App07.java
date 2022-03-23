@@ -11,8 +11,8 @@ public class App07 {
 		int i1 = Integer.parseInt(s1);
 		Integer i2 = Integer.valueOf(s1);
 		
-		int i3 = Integer.valueOf(s1);
-		Integer i4 = Integer.parseInt(s1);
+		int i3 = Integer.valueOf(s1); // auto unboxing
+		Integer i4 = Integer.parseInt(s1); // auto boxing
 		
 	}
 }
