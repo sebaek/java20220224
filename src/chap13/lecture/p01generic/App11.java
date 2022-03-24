@@ -22,7 +22,8 @@ public class App11 {
 	// "in" Object : ?
 	// "in", "out" : 쓰지마
 	
-	
+	// 상하위 타입 그림
+	// https://docs.oracle.com/javase/tutorial/java/generics/subtyping.html
 	public static void method(ArrayList<?> list) {
 		Object o = list.get(0);
 		;
