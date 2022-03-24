@@ -1,6 +1,7 @@
 package chap15.lecture.p01list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class App01 {
 	public static void main(String[] args) {
@@ -34,6 +35,17 @@ public class App01 {
 		for (String str : list1) {
 			System.out.println(str);
 		}
+		
+		System.out.println(list1.toString());
+		
+		
+		ArrayList<String> list2 = new ArrayList<>();
+		list2.add("");
+		list2.add("");
+		list2.add("");
+		Collections.copy(list2, list1);
+		
+		System.out.println(list2);
 	}
 }
 
