@@ -3,6 +3,20 @@ package chap99.codingbat;
 import java.util.List;
 
 public class Functional1 {
+	public List<String> noX(List<String> strings) {
+
+		// for (int i = 0; i < strings.size(); i++) {
+		//   String r = strings.get(i);
+		//   r = r.replace("x", "");
+
+		//   strings.set(i, r);
+		// }
+
+		strings.replaceAll(s -> s.replace("x", ""));
+
+		return strings;
+	}
+
 	public List<String> lower(List<String> strings) {
 		//strings.replaceAll(e -> e.toLowerCase());
 
