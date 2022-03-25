@@ -21,7 +21,10 @@ public class App08 {
 
 		list1.forEach(e -> System.out.println(e.substring(0, e.length() / 2)));
 	}
+	
 }
+
+
 
 
 
