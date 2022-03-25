@@ -3,6 +3,18 @@ package chap99.codingbat;
 import java.util.List;
 
 public class Functional1 {
+	public List<String> lower(List<String> strings) {
+		//strings.replaceAll(e -> e.toLowerCase());
+
+		for (int i = 0; i < strings.size(); i++) {
+			String e = strings.get(i);
+
+			strings.set(i, e.toLowerCase());
+		}
+
+		return strings;
+	}
+
 	public List<Integer> rightDigit(List<Integer> nums) {
 		nums.replaceAll(e -> e % 10);
 
