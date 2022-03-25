@@ -3,6 +3,11 @@ package chap99.codingbat;
 import java.util.List;
 
 public class Functional1 {
+	public List<String> moreY(List<String> strings) {
+		strings.replaceAll(a -> "y" + a + "y");
+
+		return strings;
+	}
 
 	public List<String> copies3(List<String> strings) {
 		strings.replaceAll(a -> {
