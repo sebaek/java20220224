@@ -3,6 +3,11 @@ package chap99.codingbat;
 import java.util.List;
 
 public class Functional2 {
+	public List<String> no34(List<String> strings) {
+		strings.removeIf(e -> e.length() == 3 || e.length() == 4);
+		return strings;
+	}
+
 	public List<String> noLong(List<String> strings) {
 		// List<String> result = new ArrayList<>();
 
