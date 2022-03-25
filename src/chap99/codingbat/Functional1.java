@@ -3,6 +3,18 @@ package chap99.codingbat;
 import java.util.List;
 
 public class Functional1 {
+	public List<Integer> rightDigit(List<Integer> nums) {
+		nums.replaceAll(e -> e % 10);
+
+		return nums;
+	}
+
+	public List<Integer> math1(List<Integer> nums) {
+		nums.replaceAll(e -> (e + 1) * 10);
+
+		return nums;
+	}
+
 	public List<String> moreY(List<String> strings) {
 		strings.replaceAll(a -> "y" + a + "y");
 
