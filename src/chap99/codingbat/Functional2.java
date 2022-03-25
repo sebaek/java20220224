@@ -3,6 +3,12 @@ package chap99.codingbat;
 import java.util.List;
 
 public class Functional2 {
+	public List<String> noZ(List<String> strings) {
+		strings.removeIf(e -> e.contains("z"));
+
+		return strings;
+	}
+
 	public List<Integer> noTeen(List<Integer> nums) {
 		nums.removeIf(e -> e >= 13 && e <= 19);
 
