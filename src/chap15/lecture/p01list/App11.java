@@ -11,8 +11,25 @@ public class App11 {
 		list.add(Arrays.asList(83, 92, 96));
 		list.add(Arrays.asList(78, 83, 93, 87, 88));
 		
+		int sum = 0, cnt = 0;
 		// 합계(881), 평균(88.1)
+		for (List<Integer> row : list) {
+//			System.out.println(row);
+			for (Integer score : row) {
+//				System.out.println(score);
+				sum += score;
+				cnt++;
+			}
+		}
 		
-		
+		System.out.println(sum);
+		System.out.println(sum / (double) cnt);
 	}
 }
+
+
+
+
+
+
+
