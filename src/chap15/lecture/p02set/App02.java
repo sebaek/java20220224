@@ -11,10 +11,10 @@ public class App02 {
 		Set<Integer> set = new HashSet<>();
 		
 		while (set.size() < 6) {
-			int num = (int) (Math.random() * 45) + 1;
-			System.out.println(num);
+//			int num = (int) (Math.random() * 45) + 1;
+//			System.out.println(num);
 			
-			set.add(num);
+			set.add((int) (Math.random() * 45) + 1);
 		}
 		
 		System.out.println(set.size()); // 6 or not
