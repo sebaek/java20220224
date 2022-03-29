@@ -3,6 +3,7 @@ package chap15.lecture.p02set;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.jupiter.api.Test;
@@ -28,10 +29,31 @@ public class App04 {
 	
 	public Set<Integer> solution(int[] nums) {
 		// nums 배열에 2개 이상 있는 값을 set에 넣어서 리턴
+		Set<Integer> set1 = new HashSet<>();
+		Set<Integer> result = new HashSet<>();
 		
-		return null;
+		for (int num : nums) {
+			if (set1.contains(num)) {
+				result.add(num);
+			} else {
+				set1.add(num);
+			}
+		}
+		
+		
+		return result;
 	}
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
