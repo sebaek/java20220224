@@ -4,6 +4,30 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Map2 {
+	public String[] firstSwap(String[] strings) {
+		Map<Character, Integer> map = new HashMap<>();
+
+		for (int i = 0; i < strings.length; i++) {
+			Character key = strings[i].charAt(0);
+
+			if (map.containsKey(key)) {
+				Integer prevIndex = map.get(key);
+
+				if (prevIndex != -1) {
+					String temp = strings[prevIndex];
+					strings[prevIndex] = strings[i];
+					strings[i] = temp;
+					// map.remove(key);
+					map.put(key, -1);
+				}
+			} else {
+				map.put(key, i);
+			}
+		}
+
+		return strings;
+	}
+
 	public String[] allSwap(String[] strings) {
 		Map<Character, Integer> map = new HashMap<>();
 
