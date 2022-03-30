@@ -3,6 +3,18 @@ package chap99.codingbat;
 import java.util.Map;
 
 public class Map1 {
+	public Map<String, String> mapAB2(Map<String, String> map) {
+		String aval = map.get("a");
+		String bval = map.get("b");
+
+		if (aval != null && aval.equals(bval)) {
+			map.remove("a");
+			map.remove("b");
+		}
+
+		return map;
+	}
+
 	public Map<String, String> topping3(Map<String, String> map) {
 		if (map.containsKey("potato")) {
 			map.put("fries", map.get("potato"));
