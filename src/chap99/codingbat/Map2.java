@@ -15,6 +15,11 @@ public class Map2 {
 				map.put(str, 1);
 			}
 		}
+		/*
+		for (String str : strings) {
+			map.compute(str, (k, v) -> v == null ? 1 : v + 1);
+		}
+		*/
 
 		return map;
 	}
