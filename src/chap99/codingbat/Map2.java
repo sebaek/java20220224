@@ -4,6 +4,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Map2 {
+	public Map<String, Integer> wordCount(String[] strings) {
+		Map<String, Integer> map = new HashMap<>();
+
+		for (String str : strings) {
+			if (map.containsKey(str)) {
+				int val = map.get(str);
+				map.put(str, val + 1);
+			} else {
+				map.put(str, 1);
+			}
+		}
+
+		return map;
+	}
+
 	public Map<String, String> pairs(String[] strings) {
 		Map<String, String> map = new HashMap<>();
 
