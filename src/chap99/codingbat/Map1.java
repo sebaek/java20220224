@@ -3,6 +3,25 @@ package chap99.codingbat;
 import java.util.Map;
 
 public class Map1 {
+	public Map<String, String> mapAB3(Map<String, String> map) {
+		boolean hasA = map.containsKey("a");
+		boolean hasB = map.containsKey("b");
+
+		if (hasA && hasB) {
+			return map;
+		}
+
+		if (hasA) {
+			map.put("b", map.get("a"));
+		}
+
+		if (hasB) {
+			map.put("a", map.get("b"));
+		}
+
+		return map;
+	}
+
 	public Map<String, String> mapAB2(Map<String, String> map) {
 		String aval = map.get("a");
 		String bval = map.get("b");
