@@ -4,6 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Map2 {
+	public Map<String, Boolean> wordMultiple(String[] strings) {
+		Map<String, Boolean> map = new HashMap<>();
+
+		for (String str : strings) {
+			map.put(str, map.containsKey(str));
+		}
+
+		return map;
+	}
+
 	public String wordAppend(String[] strings) {
 		String result = "";
 		Map<String, Integer> map = new HashMap<>();
