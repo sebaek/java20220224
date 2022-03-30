@@ -4,6 +4,30 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Map2 {
+	public String[] allSwap(String[] strings) {
+		Map<Character, Integer> map = new HashMap<>();
+
+		for (int i = 0; i < strings.length; i++) {
+			String str = strings[i];
+			Character key = str.charAt(0);
+
+			if (map.containsKey(key)) {
+				Integer prevIndex = map.get(key);
+
+				String temp = strings[prevIndex];
+				strings[prevIndex] = strings[i];
+				strings[i] = temp;
+
+				map.remove(key);
+			} else {
+				map.put(key, i);
+			}
+
+		}
+
+		return strings;
+	}
+
 	public Map<String, Boolean> wordMultiple(String[] strings) {
 		Map<String, Boolean> map = new HashMap<>();
 
