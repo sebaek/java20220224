@@ -3,6 +3,16 @@ package chap99.codingbat;
 import java.util.Map;
 
 public class Map1 {
+	public Map<String, String> topping1(Map<String, String> map) {
+		if (map.containsKey("ice cream")) {
+			map.put("ice cream", "cherry");
+		}
+
+		map.put("bread", "butter");
+
+		return map;
+	}
+
 	public Map<String, String> mapAB(Map<String, String> map) {
 		if (map.containsKey("a") && map.containsKey("b")) {
 			String aVal = map.get("a");
