@@ -3,6 +3,17 @@ package chap99.codingbat;
 import java.util.Map;
 
 public class Map1 {
+	public Map<String, String> mapAB(Map<String, String> map) {
+		if (map.containsKey("a") && map.containsKey("b")) {
+			String aVal = map.get("a");
+			String bVal = map.get("b");
+
+			map.put("ab", aVal + bVal);
+		}
+
+		return map;
+	}
+
 	public Map<String, String> mapShare(Map<String, String> map) {
 		if (map.containsKey("a")) {
 			map.put("b", map.get("a"));
