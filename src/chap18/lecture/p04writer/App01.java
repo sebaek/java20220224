@@ -17,6 +17,7 @@ public class App01 {
 		wr.write("우크라이나");
 		wr.write(new char[] {'자', '바', '스', '프', '링'});
 		wr.write(8800);
+		wr.write('\u2260');
 		
 		
 		wr.close();
