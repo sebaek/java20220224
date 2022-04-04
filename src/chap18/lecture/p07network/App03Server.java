@@ -32,6 +32,8 @@ public class App03Server {
 		}
 		
 		System.out.println("[클라이언트가 받은 파일 다 받음]");
+		bos.close();
+		fos.close();
 		bis.close();
 		is.close();
 		socket.close();

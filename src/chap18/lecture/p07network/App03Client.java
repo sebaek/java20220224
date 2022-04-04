@@ -32,7 +32,7 @@ public class App03Client {
 		System.out.println("[서버로 파일 전송 종료]");
 		System.out.println("클라이언트 프로그램 종료");
 		
-		bos.flush();
+//		bos.flush();
 		bos.close();
 		os.close();
 		bis.close();
