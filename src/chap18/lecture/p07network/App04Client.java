@@ -28,7 +28,7 @@ public class App04Client {
 			data = scanner.nextLine();
 			bw.write(data);
 			bw.newLine();
-			
+			bw.flush();
 			if (data.equals("exit")) {
 				break;
 			}
